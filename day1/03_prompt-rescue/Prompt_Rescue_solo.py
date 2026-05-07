@@ -407,7 +407,7 @@ def run_eval(client, prompts, cases_data, verbose=False):
                 f'{name}: {result["criteria"][name]["reason"]}'
                 for name in failed_criteria
             ]
-            print(f" {status} [{"; ".join(reasons)}]")
+            print(f" {status} [{'; '.join(reasons)}]")
     category_results = {}
     for cat_key, cat_info in categories.items():
         cat_case_ids = cat_info["case_ids"]
